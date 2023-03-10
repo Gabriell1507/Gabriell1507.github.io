@@ -327,9 +327,7 @@ h1.center{
     footer{
         flex-direction: column;
     }
-    .redes-sociais{
-        flex-direction: column;
-    }
+        
     .redes-sociais a{
         font-size: 16px;
     }

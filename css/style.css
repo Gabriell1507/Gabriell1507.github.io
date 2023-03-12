@@ -85,18 +85,18 @@ section{
     align-items: center;
     justify-content: center;
 }
-img{
-    width: 300px;
-    
-    float: left;
-    border: 1px solid var(--main-color);
-    border-radius: 50%;
-    padding: 5px;
-    transition: all 0.5s ease;
+
+.texto-home h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    list-style:1.1;
+    margin: 0 0 8px;
 }
 
-img:hover{
-    transform: translateY(-5px);
+.texto-home p{
+    font-size: var(--p-font);
+    font-weight: 500;
+    margin: 0 0 20px;
 }
 
 .one{
@@ -112,17 +112,22 @@ img:hover{
     color: var(--text-color);
 }
 
-.texto-home h1{
-    font-size: 3.5rem;
-    font-weight: 700;
-    list-style:1.1;
-    margin: 0 0 8px;
+.meu-nome{
+    text-shadow: #202020 1px 1px 10px;
 }
 
-.texto-home p{
-    font-size: var(--p-font);
-    font-weight: 500;
-    margin: 0 0 20px;
+img{
+    width: 300px;
+    
+    float: left;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    padding: 5px;
+    transition: all 0.5s ease;
+}
+
+img:hover{
+    transform: translateY(-5px);
 }
 
 .sobre{
@@ -133,6 +138,23 @@ img:hover{
 
 #sobre{
     font-size: var(--p-font);
+}
+
+#projetos{
+    height: calc(100vh+80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.projetos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;   
 }
 
 .botao{
@@ -156,60 +178,6 @@ img:hover{
     background-color: var(--second-color);
     color: var(--second-bg-color);
     transform: scale(1.1);
-}
-
-.meu-nome{
-    text-shadow: #202020 1px 1px 10px;
-}
-
-footer{
-    background-color: var(--second-bg-color);
-    padding: 20px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.redes-sociais{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    padding: 15px;
-    letter-spacing: 5px;
-    
-    
-}
-
-.redes-sociais a{
-    color: var(--second-color);
-    font-size: 20px;
-    padding: 5px;
-}
-
-.redes-sociais a:hover{
-    color: var(--main-color);
-    transition: 0.4s;
-}
-
-
-#projetos{
-    height: calc(100vh+80px);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-
-.projetos{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    
 }
 
 .container{
@@ -274,6 +242,35 @@ h1.center{
     margin: auto;
 }
 
+footer{
+    background-color: var(--second-bg-color);
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.redes-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 15px;
+    letter-spacing: 5px;  
+}
+
+.redes-sociais a{
+    color: var(--second-color);
+    font-size: 20px;
+    padding: 5px;
+}
+
+.redes-sociais a:hover{
+    color: var(--main-color);
+    transition: 0.4s;
+}
+
 @media (max-width: 500px){
     header{
         padding: 20px 5%;
@@ -325,9 +322,11 @@ h1.center{
         margin: 20px 0;
     }
     footer{
-        flex-direction: column;
+        flex-direction: row;
     }
-        
+    .redes-sociais{
+        flex-direction: row;
+    }
     .redes-sociais a{
         font-size: 16px;
     }

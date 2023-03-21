@@ -9,13 +9,14 @@
     list-style: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 :root{
- --bg-color : #666E73;
- --second-bg-color : #4b4b4b;
+ --bg-color : #201e1e;
+ --second-bg-color : #434343;
  --text-color: #fff;
- --main-color:#4baad3;
+ --main-color:#0CABA8;
  --second-color:#ccc;
  --big-font: 5rem;
  --h2-font: 2.5rem;
@@ -108,7 +109,7 @@ section{
     font-size: 20px;
     font-weight: 500;
     border-radius: 5px;
-    background-color: var(--main-color);
+    background-color: #0a5e5c;
     color: var(--text-color);
 }
 
@@ -141,7 +142,7 @@ img:hover{
 }
 
 #projetos{
-    height: calc(100vh+80px);
+    
     width: 100%;
     display: flex;
     align-items: center;
@@ -151,7 +152,7 @@ img:hover{
 }
 
 .projetos{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: start;   
@@ -169,16 +170,15 @@ img:hover{
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
-    background-color: var(--main-color);
+    background-color:#0a5e5c;
     color: var(--text-color);
     transition: all 0.45s ease;
 }
 
 .btn:hover{
-    background-color: var(--second-color);
-    color: var(--second-bg-color);
-    transform: scale(1.1);
+    scale: 1.1;
 }
+
 
 .container{
     display: flex;
@@ -221,14 +221,16 @@ h1.center{
 .video-game{
     width: 300px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
 
-.filmes{
+.filme{
     width: 300px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -240,15 +242,17 @@ h1.center{
     align-items: center;
     justify-content: center;
     margin: auto;
+    flex-direction: column;
 }
 
 footer{
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.4);
 }
 
 .redes-sociais{
@@ -267,13 +271,17 @@ footer{
 }
 
 .redes-sociais a:hover{
-    color: var(--main-color);
+    color: #0a5e5c;
     transition: 0.4s;
 }
 
-@media (max-width: 500px){
+@media  (max-width: 500px){
     header{
         padding: 20px 5%;
+        display: none;
+    }
+    img{
+        width: 200px;
     }
     .logo{
         font-size: 30px;
@@ -291,6 +299,48 @@ footer{
     .btn{
         font-size: 16px;
     }
+    .container div{
+        width: 300px;
+    }
+    .video-game{
+        width: 200px;
+    }
+    .filmes{
+        width: 200px;
+    }
+    .futebol{
+        width: 200px;
+    }
+    section{
+        padding: 100px 20px;
+    }
+    .sobre{
+        padding: 50px 0;
+    }
+    #sobre{
+        font-size: 16px;
+    }
+    .projetos{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container div{
+        margin: 20px 0;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .redes-sociais{
+        flex-direction: row;
+    }
+    .redes-sociais a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:830px){
     .container div{
         width: 300px;
     }

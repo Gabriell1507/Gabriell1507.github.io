@@ -186,6 +186,12 @@ img:hover{
     padding: 20px;
 }
 
+.centralizar2{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
 .container{
     display: flex;
     align-items: center;
